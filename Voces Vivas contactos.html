@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Voces Vivas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&family=Cronos+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Cronos Pro', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #000000;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Gabarito', sans-serif;
+            font-size: 80px;
+        }
+
+        h2, h3 {
+            font-family: 'Cronos Pro', sans-serif;
+        }
+
+        p {
+            font-size: 16px;
+        }
+        header {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      overflow: hidden;
+      background-image: url("banner.jpg.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+        nav {
+            background: #6f1b4b;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f4f4f4;
+            background-color: #9C2367;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* 📩 Sección de Contacto */
+        #contacto {
+            padding: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        /* 🎯 Estilos del formulario */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: left;
+        }
+
+        label {
+            font-weight: bold;
+            color: #9C2367;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button.boton {
+            background: #9C2367;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button.boton:hover {
+            background: #7a1f56;
+        }
+
+        /* 📱 Redes Sociales */
+        .redes-sociales {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .redes-sociales img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .redes-sociales img:hover {
+            transform: scale(1.1);
+        }
+
+        footer {
+            background: #6f1b4b;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .boton {
+    display: inline-block;
+    background: #9C2367;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.boton:hover {
+    background: #7a1f56;
+}
+
+.btn-ir-inicio {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #9C2367;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+
+.btn-ir-inicio:hover {
+  background-color: #ee3d8c;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contacto</h1>
+    </header>
+
+    <nav>
+        <a href="Voces vivas.html">Inicio</a>
+        <a href="Voces Vivas eventos.html">Eventos</a>
+        <a href="Voces Vivas contactos.html">¡Contáctanos!</a>
+    </nav>
+
+    <section id="contacto">
+        <h2>¡Contáctanos!</h2>
+        <p>Déjanos tus datos y nos pondremos en contacto contigo.</p>
+
+        <form action="#" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit" class="boton">Enviar</button>
+        </form>
+
+        <h3>Escríbenos en nuestras redes sociales</h3>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/vocesvivas9/?utm_source=ig_web_button_share_sheet" target="_blank">
+                <img src="https://dreamfoundry.org/wp-content/uploads/2018/12/instagram-logo-png-transparent-background.png" alt="Instagram">
+            </a>
+            <a href="mailto:vocesvivas9@gmail.com">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Correo electrónico" width="50">
+            </a>
+        </div>
+    </section>
+
+    <section class="cta">
+        <h2>Explora más</h2>
+        <p>Sumérgete en la cultura y tradiciones del Hñöhñö.</p>
+        <a href="Voces vivas.html" class="boton">Volver a la página principal</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Voces Vivas. Todos los derechos reservados.</p>
+    </footer>
+
+    <a href="#top" class="btn-ir-inicio" title="Ir al inicio">
+        &#8679;
+      </a>
+
+      
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Evidencias - Voces Vivas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;700&family=Cronos+Pro:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Cronos Pro', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      color: #000;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Gabarito', serif;
+      font-size: 80px;
+    }
+
+    h2 {
+      font-family: 'Gabarito', serif;
+      font-size: 20px;
+    }
+
+    h3 {
+      font-family: 'Gabarito', serif;
+      font-size: 24px;
+      color: #9C2367;
+      text-align: left;
+    }
+
+    h5 {
+      font-size: 24px;
+      color: #9C2367;
+    }
+
+    header {
+      position: relative;
+      width: 100%;
+      height: 280px;
+      overflow: hidden;
+      background-image: url("banner.jpg.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    nav {
+      background: #6f1b4b;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f4f4f4;
+      background-color: #9C2367;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    #estadisticas {
+  padding: 20px; /* Aplica el mismo padding que en la sección de Carteles */
+  margin: 20px auto; /* Mismo margen que en la sección de Carteles */
+  width: 90%; /* Igual que en la sección de Carteles */
+  max-width: 1000px; /* Igual que en la sección de Carteles */
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+   
+    .estadistica {
+      font-size: 24px;
+      font-weight: bold;
+      color: #9C2367;
+      margin: 10px 0;
+    }
+
+    .estadistica span {
+      font-size: 40px;
+      color: #6f1b4b;
+    }
+
+    .galeria-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .galeria-item {
+      flex: 1 1 300px;
+      max-width: 300px;
+      overflow: hidden;
+    }
+
+    .galeria-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .carteles-galeria .galeria-item img {
+      width: 70%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 768px) {
+      .galeria-item {
+        width: 100%;
+      }
+    }
+
+    footer p {
+      text-align: center;
+    }
+
+    .boton {
+      display: inline-block;
+      background: #9C2367;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .boton:hover {
+      background: #7a1f56;
+    }
+
+    p {
+      font-family: 'Cronos Pro', sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    .texto-container1 {
+      width: 90%;
+      max-width: 800px;
+      margin: 20px auto;
+      text-align: left;
+    }
+
+    section {
+      padding: 20px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 1000px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .cta {
+  padding: 20px; /* Ajusta el padding a 20px para que sea consistente con las otras secciones */
+  margin: 20px auto; /* Asegura el mismo margen que las otras secciones */
+  width: 90%; /* Igual que en las demás secciones */
+  max-width: 1000px; /* Igual que en las demás secciones */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Añade una sombra para igualar el estilo */
+  text-align: center; /* Solo centra el texto dentro de la sección */
+}
+
+.cta h2, .cta p {
+  text-align: center; /* Asegura que solo los textos estén centrados */
+}
+
+.cta a {
+  display: inline-block;
+  background: #9C2367;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.cta a:hover {
+  background: #7a1f56;
+}
+
+footer {
+            background-color: #f4f4f4;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        .btn-ir-inicio {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #9C2367;
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+
+.btn-ir-inicio:hover {
+  background-color: #ee3d8c;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Talleres</h1>
+  </header>
+
+  <nav>
+    <a href="Voces vivas.html">Inicio</a>
+    <a href="Voces Vivas evidencias.html">Talleres</a>
+    <a href="Voces Vivas contactos.html">¡Contáctanos!</a>
+  </nav>
+
+  <section id="galeria">
+    <div class="texto-container1">
+      <h3>Galería de Evidencias</h3>
+      <p>A continuación, se presentan imágenes de los talleres realizados con niñas, niños y adolescentes en el estado de Querétaro, así como con estudiantes universitarios en la UAM Cuajimalpa. Estas actividades formaron parte del proceso de evaluación de los materiales didácticos desarrollados para la enseñanza del Hñöhñö de manera lúdica e inclusiva.</p>
+    </div>
+
+    <div class="galeria-container">
+      <div class="galeria-item">
+        <img src="IMG_0812.jpg" alt="Taller de lengua Hñöhñö">
+      </div>
+      <div class="galeria-item">
+        <img src="IMG_UAM.png" alt="Participantes del taller">
+      </div>
+      <div class="galeria-item">
+        <img src="IMG_4.jpg" alt="Ejemplo de actividades en el taller">
+      </div>
+    </div>
+  </section>
+
+  <section id="carteles">
+    <div class="texto-container1">
+      <h3>Carteles del Evento</h3>
+      <p>Estos carteles fueron utilizados para la promoción de los talleres realizados en Querétaro y en la UAM Cuajimalpa. Representan visualmente los objetivos del proyecto y la diversidad de sus participantes.</p>
+    </div>
+    <div class="galeria-container carteles-galeria">
+      <div class="galeria-item">
+        <img src="Imagenes Voces en Juego-03.png" alt="Cartel del taller en Querétaro">
+      </div>
+      <div class="galeria-item">
+        <img src="Imagenes Voces en Juego-04.png" alt="Cartel del taller en UAM Cuajimalpa">
+      </div>
+    </div>
+  </section>
+
+  <section id="estadisticas">
+    <div class="texto-container1">
+    <h3>Datos del Proyecto</h3>
+    <p>Algunos resultados clave de nuestro trabajo</p>
+    <div class="estadistica">
+      <span>+50</span> Participantes en los talleres
+    </div>
+    <div class="estadistica">
+      <span>2</span> Talleres impartidos, uno en Querétaro y otro en UAM Cuajimalpa
+    </div>
+    <div class="estadistica">
+      <span>95%</span> Satisfacción de los asistentes
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Explora más</h2>
+    <p>Sumérgete en la cultura y tradiciones del Hñöhñö.</p>
+    <a href="Voces vivas.html" class="boton">Volver a inicio</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Voces Vivas. Todos los derechos reservados.</p>
+  </footer>
+
+  <a href="#top" class="btn-ir-inicio" title="Ir al inicio">
+    &#8679;
+  </a>
+
+</body>
+</html>
